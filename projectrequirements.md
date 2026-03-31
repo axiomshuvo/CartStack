@@ -89,22 +89,22 @@ Create 6–10 product data with:
 
 ### 🛒 Cart Functionality
 
-- Show selected products in cart
-- Display total product count in navbar
-- Cart layout: 1 column
-- Each cart item includes:
+- Show selected products in cart - done
+- Display total product count in navbar - done
+- Cart layout: 1 column - done
+- Each cart item includes: - done
   - Name
   - Icon
   - Price
   - Remove button
-- "Proceed to Checkout" button:
+- "Proceed to Checkout" button: - done
   - Clears all cart items
 
 ---
 
 ### 🪜 Steps Section
 
-- Designed according to Figma
+- Designed according to Figma - almost
 
 ---
 
@@ -131,7 +131,7 @@ Create 6–10 product data with:
 
 ### 🔔 Use a NPM Package React-Toastify
 
-- Use react toastify to show all the alerts of add to cart, remove, and proceed to checkout.
+- Use react toastify to show all the alerts of add to cart, remove, and proceed to checkout. -done
 
 ---
 

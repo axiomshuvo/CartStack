@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Bounce, ToastContainer } from "react-toastify";
 import "./App.css";
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
@@ -27,6 +28,19 @@ function App() {
         toollist={toollist}
         selectedPacklist={selectedPacklist}
         setSelectedPacklist={setSelectedPacklist}
+      />
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Bounce}
       />
     </>
   );

@@ -1,8 +1,10 @@
 import * as FcIcons from "react-icons/fc";
+import { toast } from "react-toastify";
 
 export default function CartList({ selectedPacklist, setSelectedPacklist }) {
   const deleteFromCart = (id) => {
     setSelectedPacklist((prev) => prev.filter((item) => item.id !== id));
+    toast.error("Product removed from cart!");
   };
 
   const totalPrice = selectedPacklist.reduce(
@@ -12,6 +14,7 @@ export default function CartList({ selectedPacklist, setSelectedPacklist }) {
 
   const proceedAll = () => {
     setSelectedPacklist([]);
+    toast.info("Checkout successful!");
   };
   console.log(selectedPacklist);
 

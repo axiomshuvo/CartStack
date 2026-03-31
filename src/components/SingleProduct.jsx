@@ -1,6 +1,7 @@
 import { use } from "react";
 import * as FcIcons from "react-icons/fc";
 import { FcCheckmark } from "react-icons/fc";
+import { toast } from "react-toastify";
 
 export default function SingleProduct({
   toollist,
@@ -16,6 +17,7 @@ export default function SingleProduct({
       return;
     }
     setSelectedPacklist((prev) => [...prev, product]);
+    toast(`${product.name} added to cart!`);
     console.log(selectedPacklist);
   };
   return (
