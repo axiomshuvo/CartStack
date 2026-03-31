@@ -1,7 +1,11 @@
 import * as FcIcons from "react-icons/fc";
 import { toast } from "react-toastify";
 
-export default function CartList({ selectedPacklist, setSelectedPacklist }) {
+export default function CartList({
+  selectedPacklist,
+  setSelectedPacklist,
+  setActiveTab,
+}) {
   const deleteFromCart = (id) => {
     setSelectedPacklist((prev) => prev.filter((item) => item.id !== id));
     toast.error("Product removed from cart!");
@@ -14,6 +18,7 @@ export default function CartList({ selectedPacklist, setSelectedPacklist }) {
 
   const proceedAll = () => {
     setSelectedPacklist([]);
+    setActiveTab("products");
     toast.info("Checkout successful!");
   };
   console.log(selectedPacklist);
@@ -29,7 +34,7 @@ export default function CartList({ selectedPacklist, setSelectedPacklist }) {
             {selectedPacklist.map((product) => (
               <div
                 key={product.id}
-                className="flex items-center gap-4 bg-purple-50 rounded-xl relative p-3 mb-2.5"
+                className="flex skeleton  items-center gap-4 bg-purple-50 rounded-xl relative p-3 mb-2.5"
               >
                 <div className="text-5xl p-2 rounded-full shadow bg-white">
                   {(() => {
@@ -39,16 +44,21 @@ export default function CartList({ selectedPacklist, setSelectedPacklist }) {
                 </div>
                 <div className="info">
                   <h3 className="text-xl font-medium">{product.name}</h3>
-                  <p>${product.price}</p>
+                  <p className="">${product.price}</p>
                 </div>
                 <button
                   onClick={() => deleteFromCart(product.id)}
-                  className="btn btn-link no-underline absolute right-10 btn-error btn-sm"
+                  className="btn font-bold btn-link no-underline absolute right-10 text-red-600 btn-md"
                 >
                   Remove
                 </button>
               </div>
             ))}
+
+            <div className="flex justify-between items-center mt-5">
+              <span className="text-xl">Total:</span>
+              <span className="font-bold text-2xl">${totalPrice}</span>
+            </div>
             <div className="card-actions mt-5">
               <button
                 onClick={() => proceedAll()}
@@ -56,10 +66,6 @@ export default function CartList({ selectedPacklist, setSelectedPacklist }) {
               >
                 Proceed To Checkout
               </button>
-            </div>
-            <div className="flex justify-between mt-5">
-              <span>Total:</span>
-              <span>${totalPrice}</span>
             </div>
           </>
         ) : (

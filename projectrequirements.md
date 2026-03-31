@@ -137,10 +137,10 @@ Create 6–10 product data with:
 
 ### ❌ Implement Selected product remove functionality
 
-- On Click Remove Button product will remove from cart section.
+- On Click Remove Button product will remove from cart section. - done
 
-- In this section the total of the selected products ( added on the carts) will show here.
-- Proceed to checkout button will remove all the products from the cart
+- In this section the total of the selected products ( added on the carts) will show here. - done
+- Proceed to checkout button will remove all the products from the cart - done
 
 ---
 
@@ -156,8 +156,8 @@ Create 6–10 product data with:
 
 ## Optional Features:
 
-1. When you click on a product it increases the cart count in the Navbar and clears it when you click on the proceed to checkout button.
-2. When clicking on the Buy now Button it shows an “Added to cart” message on the button.
+1. When you click on a product it increases the cart count in the Navbar and clears it when you click on the proceed to checkout button. - done
+2. When clicking on the Buy now Button it shows an “Added to cart” message on the button. -done
 
 ## ⚙️ Technologies Used
 
@@ -171,5 +171,5 @@ Create 6–10 product data with:
 
 ## 📤 What to submit:
 
-- GitHub Repository Link:
-- Live Site Link:
+- GitHub Repository Link: https://github.com/axiomshuvo/CartStack
+- Live Site Link: https://cartstack.netlify.app

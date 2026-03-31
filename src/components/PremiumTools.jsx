@@ -8,7 +8,6 @@ export default function PremiumTools({
   setSelectedPacklist,
 }) {
   const [activeTab, setActiveTab] = useState("products");
-  const [packingMark, setpackingMark] = useState([]);
 
   return (
     <div className="container mx-auto py-12  text-center space-y-5">
@@ -63,6 +62,7 @@ export default function PremiumTools({
           />
         ) : (
           <CartList
+            setActiveTab={setActiveTab}
             selectedPacklist={selectedPacklist}
             setSelectedPacklist={setSelectedPacklist}
           />

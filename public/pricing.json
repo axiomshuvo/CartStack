@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "packageName": "stater",
+    "title": "Launch Fast With Core Essentials",
+    "slogan": "Perfect for individuals and side projects.",
+    "price": 19,
+    "features": ["Up to 5 active projects", "Email support", "Basic analytics"],
+    "tag": "",
+    "button": "Get Started Free"
+  },
+  {
+    "id": 2,
+    "packageName": "pro",
+    "title": "Scale Smarter With Powerful Tools",
+    "slogan": "Best for growing teams and busy workflows.",
+    "price": 49,
+    "features": [
+      "Unlimited projects",
+      "Priority support",
+      "Advanced analytics",
+      "Team collaboration"
+    ],
+    "tag": "most popular",
+    "button": "Buy Pro Now"
+  },
+  {
+    "id": 3,
+    "packageName": "enterprice",
+    "title": "Control, Security, and Customization",
+    "slogan": "Built for organizations with advanced requirements.",
+    "price": 129,
+    "features": [
+      "Dedicated account manager",
+      "SSO and advanced security",
+      "Custom integrations",
+      "SLA and onboarding support"
+    ],
+    "tag": "",
+    "button": "Talk to Sales"
+  }
+]

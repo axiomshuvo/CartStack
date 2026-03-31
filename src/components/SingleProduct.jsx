@@ -43,9 +43,9 @@ export default function SingleProduct({
           return (
             <div
               key={product.id}
-              className="card card-dash bg-base-100 text-left shadow-xl shadow-gray-200"
+              className=" card  card-dash bg-base-100 text-left shadow-xl shadow-gray-200"
             >
-              <div className="card-body relative">
+              <div className="card-body hover:skeleton relative">
                 <div className={`badge ${badgeClass} absolute right-2 top-2`}>
                   {product.tag}
                 </div>
