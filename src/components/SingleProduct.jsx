@@ -8,23 +8,14 @@ export default function SingleProduct({
   setSelectedPacklist,
 }) {
   const productList = use(toollist);
-  //         "id": 8,
-  //     "name": "AI Video Enhancer",
-  //     "description": "Enhance videos automatically using AI-powered upscaling and filters.",
-  //     "price": 32,
-  //     "period": "one-time",
-  //     "tag": "new",
-  //     "features": ["4K upscaling", "Noise reduction", "Color correction"],
-  //     "icon": "FiVideo",
-  //     "flatColorIcon": "FcFilmReel"
 
-  const handleSinglePackSelect = (id) => {
-    console.log("Selected Product ID:", id);
+  const handleSinglePackSelect = (product) => {
+    console.log("Selected Product:", product);
 
-    if (selectedPacklist.includes(id)) {
+    if (selectedPacklist.some((item) => item.id === product.id)) {
       return;
     }
-    setSelectedPacklist((prev) => [...prev, id]);
+    setSelectedPacklist((prev) => [...prev, product]);
     console.log(selectedPacklist);
   };
   return (
@@ -43,7 +34,9 @@ export default function SingleProduct({
               badgeClass = "badge-warning";
           }
 
-          const isOnList = selectedPacklist.includes(product.id);
+          const isOnList = selectedPacklist.some(
+            (item) => item.id === product.id,
+          );
 
           return (
             <div
@@ -79,7 +72,7 @@ export default function SingleProduct({
                 </ul>
                 <div className="card-actions mt-5">
                   <button
-                    onClick={() => handleSinglePackSelect(product.id)}
+                    onClick={() => handleSinglePackSelect(product)}
                     className={`btn btn-block ${isOnList ? " btn-success rounded-full " : "theme-bg"}`}
                     disabled={isOnList}
                   >

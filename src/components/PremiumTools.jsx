@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import CartList from "./CartList";
 import SingleProduct from "./SingleProduct";
 
@@ -7,6 +7,9 @@ export default function PremiumTools({
   selectedPacklist,
   setSelectedPacklist,
 }) {
+  const [activeTab, setActiveTab] = useState("products");
+  const [packingMark, setpackingMark] = useState([]);
+
   return (
     <div className="container mx-auto py-12  text-center space-y-5">
       <div className="w-full lg:w-2/3 mx-auto space-y-5">
@@ -23,11 +26,16 @@ export default function PremiumTools({
         >
           <a
             role="tab"
-            className="tab  rounded-full bg-theme-gradient text-white tab-active"
+            className={`tab ${activeTab === "products" ? " rounded-full bg-theme-gradient text-white tab-active" : ""}`}
+            onClick={() => setActiveTab("products")}
           >
             Products
           </a>
-          <a role="tab" className="tab ">
+          <a
+            role="tab"
+            className={`tab ${activeTab === "cart" ? " rounded-full bg-theme-gradient text-white tab-active" : ""}`}
+            onClick={() => setActiveTab("cart")}
+          >
             Cart{" "}
             {selectedPacklist.length > 0 && (
               <span className="ml-2">{selectedPacklist.length}</span>
@@ -47,12 +55,18 @@ export default function PremiumTools({
           </div>
         }
       >
-        <SingleProduct
-          toollist={toollist}
-          selectedPacklist={selectedPacklist}
-          setSelectedPacklist={setSelectedPacklist}
-        />
-        <CartList selectedPacklist={selectedPacklist} />
+        {activeTab === "products" ? (
+          <SingleProduct
+            toollist={toollist}
+            selectedPacklist={selectedPacklist}
+            setSelectedPacklist={setSelectedPacklist}
+          />
+        ) : (
+          <CartList
+            selectedPacklist={selectedPacklist}
+            setSelectedPacklist={setSelectedPacklist}
+          />
+        )}
       </Suspense>
     </div>
   );
