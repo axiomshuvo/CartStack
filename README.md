@@ -1,16 +1,56 @@
-# React + Vite
+# 🛒 CartStack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CartStack is a modern digital tools storefront built with React, where users can browse premium AI products, manage cart actions, and move through a clean checkout flow.
 
-Currently, two official plugins are available:
+## 🔗 Live Links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🌐 [Live Site](https://cartstack.netlify.app/)
+- 💻 [GitHub Repository](https://github.com/axiomshuvo/CartStack)
 
-## React Compiler
+## 🧰 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- Tailwind CSS v4
+- DaisyUI
+- React Icons
+- JavaScript (ES6+)
+- JSON (product data source)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Product data fetching from JSON and dynamic product card rendering.
+- Add to cart flow with product count updates in the navbar.
+- Remove from cart support with real-time total price recalculation.
+- Quantity and price add/remove behavior through cart actions.
+- Proceed to checkout action to clear cart state.
+- Responsive layout for desktop and mobile views.
+
+## ⚙️ Local Setup
+
+1. Clone the repository.
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
+
+```bash
+npm run dev
+```
+
+4. Build for production:
+
+```bash
+npm run build
+```
+
+## 👨‍💻 Author
+
+Pradipta Sarker
+
+## 📄 License
+
+MIT License
