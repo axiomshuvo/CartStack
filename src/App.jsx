@@ -1,10 +1,16 @@
-import "./App.css";
+import "./app.css";
+import Banner from "./components/Banner";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+      <div className="container mx-auto">
+        <Navbar />
+      </div>
+      <div className="divider"></div>
+      <div className="container mx-auto">
+        <Banner />
       </div>
     </>
   );

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "AI Code Assistant",
+    "description": "Smart AI-powered assistant that suggests code snippets and fixes bugs instantly.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Auto-complete code",
+      "Error detection",
+      "Multi-language support"
+    ],
+    "icon": "FiCpu",
+    "flatColorIcon": "FcCommandLine"
+  },
+  {
+    "id": 2,
+    "name": "AI Image Generator",
+    "description": "Generate high-quality images and art using AI models.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["HD images", "Multiple styles", "Custom dimensions"],
+    "icon": "FiImage",
+    "flatColorIcon": "FcLandscape"
+  },
+  {
+    "id": 3,
+    "name": "AI Chat Server",
+    "description": "Host AI chatbots for websites and apps with real-time responses.",
+    "price": 35,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Real-time chat",
+      "Multi-language support",
+      "Customizable personality"
+    ],
+    "icon": "FiMessageCircle",
+    "flatColorIcon": "FcComments"
+  },
+  {
+    "id": 4,
+    "name": "AI Content Analyzer",
+    "description": "Analyze and summarize text content with AI-powered insights.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Summarize content",
+      "Keyword extraction",
+      "Sentiment analysis"
+    ],
+    "icon": "FiFileText",
+    "flatColorIcon": "FcDocument"
+  },
+  {
+    "id": 5,
+    "name": "AI Voice Generator",
+    "description": "Convert text to realistic voiceovers in multiple languages.",
+    "price": 22,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Multi-language voices", "Custom pitch & speed", "MP3 export"],
+    "icon": "FiMic",
+    "flatColorIcon": "FcVoicePresentation"
+  },
+  {
+    "id": 6,
+    "name": "AI Data Insights",
+    "description": "Generate reports and insights from your datasets automatically.",
+    "price": 40,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Visual dashboards", "Trend detection", "Export CSV/PDF"],
+    "icon": "FiBarChart2",
+    "flatColorIcon": "FcComboChart"
+  },
+  {
+    "id": 7,
+    "name": "AI Marketing Optimizer",
+    "description": "Optimize ad campaigns and email marketing using AI predictions.",
+    "price": 28,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["AI recommendations", "Campaign analysis", "A/B testing"],
+    "icon": "FiTrendingUp",
+    "flatColorIcon": "FcAdvertising"
+  },
+  {
+    "id": 8,
+    "name": "AI Video Enhancer",
+    "description": "Enhance videos automatically using AI-powered upscaling and filters.",
+    "price": 32,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["4K upscaling", "Noise reduction", "Color correction"],
+    "icon": "FiVideo",
+    "flatColorIcon": "FcFilmReel"
+  },
+  {
+    "id": 9,
+    "name": "AI Security Monitor",
+    "description": "Monitor servers and apps for security threats using AI detection.",
+    "price": 50,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Threat alerts", "Log analysis", "Anomaly detection"],
+    "icon": "FiShield",
+    "flatColorIcon": "FcPrivacy"
+  }
+]
