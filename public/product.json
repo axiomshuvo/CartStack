@@ -5,8 +5,7 @@
     "description": "Smart AI-powered assistant that suggests code snippets and fixes bugs instantly.",
     "price": 29,
     "period": "monthly",
-    "tag": "Popular",
-    "tagType": "popular",
+    "tag": "popular",
     "features": [
       "Auto-complete code",
       "Error detection",
@@ -21,8 +20,7 @@
     "description": "Generate high-quality images and art using AI models.",
     "price": 19,
     "period": "one-time",
-    "tag": "New",
-    "tagType": "new",
+    "tag": "new",
     "features": ["HD images", "Multiple styles", "Custom dimensions"],
     "icon": "FiImage",
     "flatColorIcon": "FcLandscape"
@@ -33,8 +31,7 @@
     "description": "Host AI chatbots for websites and apps with real-time responses.",
     "price": 35,
     "period": "monthly",
-    "tag": "Best Seller",
-    "tagType": "best-seller",
+    "tag": "best seller",
     "features": [
       "Real-time chat",
       "Multi-language support",
@@ -49,8 +46,7 @@
     "description": "Analyze and summarize text content with AI-powered insights.",
     "price": 15,
     "period": "monthly",
-    "tag": "Popular",
-    "tagType": "popular",
+    "tag": "popular",
     "features": [
       "Summarize content",
       "Keyword extraction",
@@ -65,8 +61,7 @@
     "description": "Convert text to realistic voiceovers in multiple languages.",
     "price": 22,
     "period": "one-time",
-    "tag": "New",
-    "tagType": "new",
+    "tag": "new",
     "features": ["Multi-language voices", "Custom pitch & speed", "MP3 export"],
     "icon": "FiMic",
     "flatColorIcon": "FcVoicePresentation"
@@ -77,8 +72,7 @@
     "description": "Generate reports and insights from your datasets automatically.",
     "price": 40,
     "period": "monthly",
-    "tag": "Best Seller",
-    "tagType": "best-seller",
+    "tag": "best seller",
     "features": ["Visual dashboards", "Trend detection", "Export CSV/PDF"],
     "icon": "FiBarChart2",
     "flatColorIcon": "FcComboChart"
@@ -89,8 +83,7 @@
     "description": "Optimize ad campaigns and email marketing using AI predictions.",
     "price": 28,
     "period": "monthly",
-    "tag": "Popular",
-    "tagType": "popular",
+    "tag": "popular",
     "features": ["AI recommendations", "Campaign analysis", "A/B testing"],
     "icon": "FiTrendingUp",
     "flatColorIcon": "FcAdvertising"
@@ -101,8 +94,7 @@
     "description": "Enhance videos automatically using AI-powered upscaling and filters.",
     "price": 32,
     "period": "one-time",
-    "tag": "New",
-    "tagType": "new",
+    "tag": "new",
     "features": ["4K upscaling", "Noise reduction", "Color correction"],
     "icon": "FiVideo",
     "flatColorIcon": "FcFilmReel"
@@ -113,8 +105,7 @@
     "description": "Monitor servers and apps for security threats using AI detection.",
     "price": 50,
     "period": "monthly",
-    "tag": "Best Seller",
-    "tagType": "best-seller",
+    "tag": "best seller",
     "features": ["Threat alerts", "Log analysis", "Anomaly detection"],
     "icon": "FiShield",
     "flatColorIcon": "FcPrivacy"

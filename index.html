@@ -5,6 +5,82 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cartstack</title>
+    <style>
+      :root {
+        --theme-rgb: linear-gradient(
+          90deg,
+          rgba(79, 57, 246, 1) 0%,
+          rgba(139, 0, 245, 1) 100%
+        );
+        --theme-hover: linear-gradient(
+          90deg,
+          rgba(41, 0, 222, 1) 0%,
+          rgba(181, 0, 209, 1) 100%
+        );
+      }
+
+      body {
+        font-family: "Manrope", sans-serif;
+        font-size: 1em;
+      }
+
+      /* Filled button */
+      .theme-bg {
+        background: var(--theme-rgb);
+        color: #ffffff;
+        border-radius: 9999px;
+        padding: 0.5rem 1.5rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .theme-bg:hover,
+      .theme-bg:focus {
+        background: var(--theme-hover);
+        transform: scale(1.01);
+      }
+
+      .theme-outline {
+        border: 2px solid transparent;
+        /* border-radius: 9999px !important; */
+
+        background: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        border-image-source: var(--theme-rgb);
+        border-image-slice: 1;
+        border-image-repeat: stretch;
+
+        background: var(--theme-rgb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .theme-outline:hover,
+      .theme-outline:focus {
+        border-image-source: white;
+        background: var(--theme-hover);
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: white;
+        transform: scale(1.01);
+      }
+
+      .theme-text {
+        background: var(--theme-rgb);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .theme-text-hover {
+        background: var(--theme-hover);
+        -webkit-background-clip: unset; /* reset clip */
+        background-clip: unset;
+        -webkit-text-fill-color: white; /* show white text */
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
