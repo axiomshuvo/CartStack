@@ -1,7 +1,12 @@
 import { Suspense } from "react";
-import Card from "./Card";
+import CartList from "./CartList";
+import SingleProduct from "./SingleProduct";
 
-export default function PremiumTools({ toollist }) {
+export default function PremiumTools({
+  toollist,
+  selectedPacklist,
+  setSelectedPacklist,
+}) {
   return (
     <div className="container mx-auto py-12  text-center space-y-5">
       <div className="w-full lg:w-2/3 mx-auto space-y-5">
@@ -23,7 +28,10 @@ export default function PremiumTools({ toollist }) {
             Products
           </a>
           <a role="tab" className="tab ">
-            Cart
+            Cart{" "}
+            {selectedPacklist.length > 0 && (
+              <span className="ml-2">{selectedPacklist.length}</span>
+            )}
           </a>
         </div>
       </div>
@@ -39,9 +47,12 @@ export default function PremiumTools({ toollist }) {
           </div>
         }
       >
-        <div className="tool-list p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          <Card toollist={toollist} />
-        </div>
+        <SingleProduct
+          toollist={toollist}
+          selectedPacklist={selectedPacklist}
+          setSelectedPacklist={setSelectedPacklist}
+        />
+        <CartList selectedPacklist={selectedPacklist} />
       </Suspense>
     </div>
   );

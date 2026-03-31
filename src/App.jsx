@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
@@ -12,15 +13,21 @@ const fetchProducts = async () => {
 function App() {
   const toollist = fetchProducts();
   // const [price, setPrice] = useState([]);
+  const [selectedPacklist, setSelectedPacklist] = useState([]);
+
   return (
     <>
-      <Navbar />
-      <div className="divider"></div>
+      <Navbar selectedPacklist={selectedPacklist} />
+      {/* <div className="divider"></div> */}
       <Banner />
       <div className="bg-theme-gradient">
         <Stats />
       </div>
-      <PremiumTools toollist={toollist} />
+      <PremiumTools
+        toollist={toollist}
+        selectedPacklist={selectedPacklist}
+        setSelectedPacklist={setSelectedPacklist}
+      />
     </>
   );
 }
