@@ -17,7 +17,7 @@ export default function SingleProduct({
       return;
     }
     setSelectedPacklist((prev) => [...prev, product]);
-    toast(`${product.name} added to cart!`);
+    toast.success(`${product.name} added to cart!`);
     console.log(selectedPacklist);
   };
   return (

@@ -8,7 +8,13 @@ export default function CartList({
 }) {
   const deleteFromCart = (id) => {
     setSelectedPacklist((prev) => prev.filter((item) => item.id !== id));
-    toast.error("Product removed from cart!");
+
+    if (selectedPacklist.length === 1) {
+      setActiveTab("products");
+      toast.error("All Product removed from cart!");
+    } else {
+      toast.info("Product removed from cart!");
+    }
   };
 
   const totalPrice = selectedPacklist.reduce(
@@ -19,7 +25,7 @@ export default function CartList({
   const proceedAll = () => {
     setSelectedPacklist([]);
     setActiveTab("products");
-    toast.info("Checkout successful!");
+    toast.warning("Checkout successful!");
   };
   console.log(selectedPacklist);
 
